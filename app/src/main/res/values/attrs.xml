@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--好像暂时没用到，先不commit-->
+    <declare-styleable name="RoundCircleView">
+        <attr name="round_color" format="color"/>
+        <attr name="round_radius" format="dimension" />
+        <attr name="circle_radius" format="dimension"/>
+        <attr name="circle_color" format="color"/>
+        <attr name="state_icon" format="reference"/>
+    </declare-styleable>
+
+</resources>

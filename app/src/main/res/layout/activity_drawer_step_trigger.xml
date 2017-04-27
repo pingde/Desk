@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/content_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:elevation="5dp">
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="90px"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:background="@mipmap/ic_back_arrow_56"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/pic_anchor"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/pic_wait_trigger"/>
+    <RelativeLayout
+        android:layout_below="@+id/title"
+        android:layout_above="@+id/pic_anchor"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="@dimen/text_size_normal"
+            android:text="手机wifi链接设备AP"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_trigger_next"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70px"
+        android:layout_marginLeft="90px"
+        android:layout_marginRight="90px"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@drawable/ripple_button_long"
+        android:textColor="@color/text_write"
+        android:textSize="@dimen/text_size_normal_27"
+        android:text="按钮操作完成"/>
+
+</RelativeLayout>

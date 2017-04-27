@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_marginRight="50px"
+    android:layout_marginLeft="50px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <CheckBox
+            android:id="@+id/cb_switch"
+            android:layout_width="@dimen/ic_size_normal_30"
+            android:layout_height="@dimen/ic_size_normal_30"
+            android:layout_centerInParent="true"
+            android:background="@drawable/select_switch"
+            android:button="@null" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <CheckBox
+            android:id="@+id/cb_switch_write"
+            android:layout_width="@dimen/ic_size_normal_30"
+            android:layout_height="@dimen/ic_size_normal_30"
+            android:layout_centerInParent="true"
+            android:background="@drawable/select_switch_write"
+            android:button="@null"   />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <CheckBox
+            android:id="@+id/cb_switch_pink"
+            android:layout_width="@dimen/ic_size_normal_30"
+            android:layout_height="@dimen/ic_size_normal_30"
+            android:layout_centerInParent="true"
+            android:background="@drawable/select_switch_pink"
+            android:button="@null"  />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <CheckBox
+            android:id="@+id/cb_switch_blue"
+            android:layout_width="@dimen/ic_size_normal_30"
+            android:layout_height="@dimen/ic_size_normal_30"
+            android:layout_centerInParent="true"
+            android:background="@drawable/select_switch_blue"
+            android:button="@null"   />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <CheckBox
+            android:id="@+id/ib_switch_more"
+            android:layout_width="@dimen/ic_size_normal_30"
+            android:layout_height="@dimen/ic_size_normal_30"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_switch_more"
+            android:button="@null" />
+    </RelativeLayout>
+
+</LinearLayout>

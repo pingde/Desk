@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="90px"
+        android:layout_marginRight="90px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/img_sign_account"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/ic_wifi_56" />
+
+        <EditText
+            android:id="@+id/et_wifi_account"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="32px"
+            android:layout_weight="1"
+            android:hint="WIFI账号"
+            android:textColorHint="@color/text_gray"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_normal"
+            android:background="@null"
+            android:maxLines="1" />
+
+        <ImageButton
+            android:id="@+id/img_wifi_search"
+            android:layout_width="@dimen/ic_size_small_1"
+            android:layout_height="@dimen/ic_size_small_1"
+            android:layout_marginRight="8px"
+            android:background="@mipmap/ic_search" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/pic_line_horizontal_8"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginTop="15px"
+        android:layout_marginLeft="90px"
+        android:layout_marginRight="90px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_key1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/ic_password_56" />
+
+
+        <EditText
+            android:id="@+id/et_wifi_password"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="32px"
+            android:layout_weight="1"
+            android:hint="密码"
+            android:textColorHint="@color/text_gray"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_normal"
+            android:inputType="textPassword"
+            android:background="@null"
+            android:maxLines="1"/>
+
+        <CheckBox
+            android:id="@+id/cb_wifi_seen"
+            android:button="@null"
+            android:background="@drawable/select_seen"
+            android:layout_width="@dimen/ic_size_small_1"
+            android:layout_height="@dimen/ic_size_small_1"
+            android:layout_marginRight="8px"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/pic_line_horizontal_8"/>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_background"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:elevation="5dp">
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="90px"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:background="@mipmap/ic_back_arrow_56" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_drawer_set"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="32px"
+            android:layout_width="@dimen/ic_size_normal"
+            android:layout_height="@dimen/ic_size_normal"
+            android:src="@mipmap/ic_drawer_set"/>
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_drawer_container"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+    </android.support.v4.view.ViewPager>
+    <!--<ImageView-->
+        <!--android:id="@+id/img_turn_left"-->
+        <!--android:layout_width="18dp"-->
+        <!--android:layout_height="36dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="50px"-->
+        <!--android:elevation="5dp"-->
+        <!--android:src="@mipmap/ic_turn_left" />-->
+    <!--<ImageView-->
+        <!--android:id="@+id/img_turn_right"-->
+        <!--android:layout_width="18dp"-->
+        <!--android:layout_height="36dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="50px"-->
+        <!--android:elevation="5dp"-->
+        <!--android:src="@mipmap/ic_turn_right" />-->
+
+    <LinearLayout
+        android:id="@+id/ll_notice_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vp_drawer_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/tv_l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="drawer_left"
+            android:text="L"
+            android:textColor="@color/green_shallow"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" . "
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/tv_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="drawer_Right"
+            android:text="R"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_background"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fl_device"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:elevation="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_product"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_title_click"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_product"
+                android:layout_width="@dimen/ic_size_normal"
+                android:layout_height="@dimen/ic_size_normal"
+                android:background="@drawable/select_product"
+                android:button="@null"
+                android:checked="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8px"
+                android:text="产品"
+                android:textColor="@color/green_shallow"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_mine"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_title_click"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_mine"
+                android:layout_width="@dimen/ic_size_normal"
+                android:layout_height="@dimen/ic_size_normal"
+                android:background="@drawable/select_mine"
+                android:button="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8px"
+                android:text="我的"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

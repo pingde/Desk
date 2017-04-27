@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250px"
+    android:layout_height="300px"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rl_book_cover"
+        android:layout_width="78dp"
+        android:layout_height="104dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px">
+
+        <ImageView
+            android:id="@+id/img_book_cover"
+            android:layout_width="78dp"
+            android:layout_height="104dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/pic_book2" />
+
+        <CheckBox
+            android:id="@+id/cb_book_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/select_hook"
+            android:button="@null" />
+
+    </RelativeLayout>
+    <!--<ImageView-->
+    <!--android:id="@+id/img_book_cover"-->
+    <!--android:layout_marginTop="20px"-->
+    <!--android:transitionName="@string/transition"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:src="@mipmap/pic_book2" />-->
+    <TextView
+        android:id="@+id/tv_book_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_book_cover"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12px"
+        android:text="书名书名"
+        android:textColor="@color/text_gray_deep"
+        android:textSize="@dimen/ic_size_small" />
+
+    <ImageView
+        android:layout_width="250px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/pic_line_horizontal_short" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300px"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/pic_line_vertical" />
+
+</RelativeLayout>

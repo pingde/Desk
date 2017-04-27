@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:fitsSystemWindows="true"
+        android:id="@+id/ll_light_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+    <!--<ImageView-->
+       <!---->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+    <RelativeLayout
+        android:id="@+id/rl_more_color"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_above="@+id/rl_option"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/part_drawer_more_color"/>
+    </RelativeLayout>
+
+
+   <RelativeLayout
+       android:id="@+id/rl_option"
+       android:layout_alignParentBottom="true"
+       android:layout_marginBottom="100px"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <include layout="@layout/part_light_color"/>
+   </RelativeLayout>
+
+</RelativeLayout>

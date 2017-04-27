@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_100"
+        android:background="@color/title_background">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="90px"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple_title_click">
+
+            <ImageButton
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/length_20"
+                android:background="@mipmap/ic_back_arrow_56" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="录入书籍"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_big" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30px"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="@dimen/text_size_normal"
+            android:text="扫描编码"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350px">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280px"
+            android:background="@mipmap/pic_line_horizontal_long" />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="128dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@mipmap/pic_add_scan_bg"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:layout_width="@dimen/ic_size_normal"
+                android:layout_height="@dimen/ic_size_normal"
+                android:src="@mipmap/pic_add_scan_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12px"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_size_small"
+                android:text="拍摄书籍封面"/>
+            </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:layout_marginTop="30px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginRight="10px"
+                android:src="@mipmap/ic_book_item_mark" />
+
+            <TextView
+                android:layout_width="90px"
+                android:layout_height="wrap_content"
+                android:text="书名:"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="@dimen/text_size_normal_27" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_size_normal_27" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="90px"
+            android:layout_marginRight="90px"
+            android:src="@mipmap/pic_line_horizontal_long" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:layout_marginTop="30px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginRight="10px"
+                android:src="@mipmap/ic_book_item_mark" />
+
+            <TextView
+                android:layout_width="90px"
+                android:layout_height="wrap_content"
+                android:text="备注:"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="@dimen/text_size_normal_27" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_size_normal_27" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90px"
+            android:layout_marginRight="90px"
+            android:scaleType="fitXY"
+            android:src="@mipmap/pic_line_horizontal_long" />
+
+    </LinearLayout>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <RelativeLayout
+        android:background="@color/title_background"
+        android:layout_width="match_parent"
+        android:layout_height="180px">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ripple_button_green"
+            android:textColor="@color/text_write"
+            android:textSize="@dimen/text_size_normal_27"
+            android:text="加入书架"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="160dp">
+    <com.baiheplayer.desk.drawer.view.DrawerRightView
+        android:id="@+id/dlv_drawer"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.baiheplayer.desk.drawer.view.DrawerRightView>
+    <ImageView
+        android:id="@+id/img_turn_left"
+        android:layout_width="18dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50px"
+        android:elevation="5dp"
+        android:src="@mipmap/ic_turn_left" />
+</RelativeLayout>

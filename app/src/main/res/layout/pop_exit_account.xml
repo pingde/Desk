@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/content_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_nike_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="10px"
+        android:textColor="@color/text_gray_deep"
+        android:textSize="@dimen/text_size_big"
+        android:text="书桌君"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:layout_marginBottom="50px"
+        android:textColor="@color/text_gray_deep"
+        android:textSize="@dimen/text_size_big"
+        android:text="确定退出当前账号"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="50px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/ensure"
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:background="@drawable/ripple_button_green"
+            android:textColor="@color/text_write"
+            android:textSize="@dimen/text_size_normal_27"
+            android:text="退出"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:background="@drawable/ripple_button_empty"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="@dimen/text_size_normal_27"
+            android:text="取消"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

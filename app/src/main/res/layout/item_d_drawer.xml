@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/drawer_background"
+        android:layout_width="match_parent"
+        android:layout_height="203dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="203dp"
+            android:background="@mipmap/pic_product"
+            android:scaleType="matrix" />
+
+        <RelativeLayout
+            android:id="@+id/rl_disconnect"
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black_deep"
+            android:text="设备不在线">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_write"
+                android:textSize="@dimen/text_size_normal_27"
+                android:text="设备不在线"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_simple_opt"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black_deep"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_left_drawer"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cb_left_drawer"
+                    android:layout_width="@dimen/ic_size_normal"
+                    android:layout_height="@dimen/ic_size_normal"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_drawer_left_1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_right_drawer"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/cb_right_drawer"
+                    android:layout_width="@dimen/ic_size_normal"
+                    android:layout_height="@dimen/ic_size_normal"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_drawer_right_1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_light"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <CheckBox
+                    android:id="@+id/cb_light"
+                    android:layout_width="@dimen/ic_size_small_1"
+                    android:layout_height="@dimen/ic_size_normal"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/select_light"
+                    android:button="@null" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_host"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30px"
+            android:textColor="@color/text_green"
+            android:textSize="@dimen/text_size_normal_27"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30px"
+        android:layout_below="@+id/drawer_background" />
+</RelativeLayout>

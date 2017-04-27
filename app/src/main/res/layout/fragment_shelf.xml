@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_background"
+    android:elevation="3dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/title_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="90px"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:background="@mipmap/ic_back_arrow_56" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.SearchView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16px"
+            android:layout_marginLeft="16px"
+            android:layout_marginRight="16px"
+            android:layout_marginTop="16px"
+            android:layout_weight="1"
+            android:background="@mipmap/pic_shelf_search_bg">
+
+        </android.support.v7.widget.SearchView>
+
+        <ImageView
+            android:id="@+id/img_add_device"
+            android:layout_width="@dimen/ic_size_normal"
+            android:layout_height="@dimen/ic_size_normal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="32px"
+            android:src="@mipmap/ic_shelf_catalog" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_hide_mode"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/title_background"
+        android:elevation="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_select_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:text="全选"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/tv_select_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30px"
+            android:text="编辑书架"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="@dimen/text_size_big"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_select_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:text="删除"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="@dimen/text_size_normal_27" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32px"
+        android:layout_below="@+id/title"
+        android:text="100/100"
+        android:elevation="5dp"
+        android:textColor="@color/text_gray_deep"
+        android:textSize="@dimen/text_size_normal" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_book_shelf"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title">
+        <!--app:spanCount="3"-->
+        <!--app:layoutManager="android:support.v7.widget.GridLayoutManager"-->
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/ll_hide_mode"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/title_background"
+        android:elevation="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bt_delete"
+            android:layout_width="250px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_button_green"
+            android:text="删除所选项(1)"
+            android:textColor="@color/text_write"
+            android:textSize="@dimen/text_size_normal_27" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="250px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_button_empty"
+            android:text="取消"
+            android:textColor="@color/text_green"
+            android:textSize="@dimen/text_size_normal_27" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</RelativeLayout>

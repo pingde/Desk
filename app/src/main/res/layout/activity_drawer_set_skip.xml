@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/title_background">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="90px"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:background="@mipmap/ic_back_arrow_56" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="跳过密码设置"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="@dimen/text_size_big" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_skip_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_drawer_skip_ensure"
+            android:layout_width="255px"
+            android:layout_height="75px"
+            android:background="@drawable/ripple_button_green"
+            android:text="去设置"
+            android:textColor="@color/text_write"
+            android:textSize="@dimen/text_size_normal_27" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_drawer_skip_cancel"
+            android:layout_width="255px"
+            android:layout_height="75px"
+            android:background="@drawable/ripple_button_empty"
+            android:text="暂不设置"
+            android:textColor="@color/text_green"
+            android:textSize="@dimen/text_size_normal_27" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_skip_button"
+        android:layout_below="@+id/title"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前抽屉未设置密码，"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="@dimen/text_size_normal_27" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否继续"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="@dimen/text_size_normal_27" />
+    </LinearLayout>
+</RelativeLayout>

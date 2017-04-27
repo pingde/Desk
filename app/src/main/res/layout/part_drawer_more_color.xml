@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/color_array"
+            android:src="@color/color_drawer_0" />
+
+        <ImageView
+            style="@style/color_array"
+            android:src="@color/color_drawer_1" />
+
+        <ImageView
+            style="@style/color_array"
+            android:src="@color/color_drawer_2" />
+
+        <ImageView
+            style="@style/color_array"
+            android:src="@color/color_drawer_3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/color_array"
+            android:src="@color/color_drawer_4" />
+
+        <ImageView
+            style="@style/color_array"
+            android:src="@color/color_drawer_5" />
+
+        <ImageView
+            style="@style/color_array"
+            android:src="@color/color_drawer_6" />
+
+        <ImageView
+            style="@style/color_array"
+            android:src="@color/color_drawer_7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/color_array"
+            android:src="@color/color_drawer_8" />
+
+        <ImageView
+            style="@style/color_array"
+            android:src="@color/color_drawer_9" />
+
+        <ImageView
+            style="@style/color_array"
+            android:src="@color/color_drawer_10" />
+
+        <ImageView
+            style="@style/color_array"
+            android:src="@color/color_drawer_11" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/color_array"
+            android:src="@color/color_drawer_12" />
+
+        <ImageView
+            style="@style/color_array"
+            android:src="@color/color_drawer_13" />
+
+        <ImageView
+            style="@style/color_array"
+            android:src="@color/color_drawer_14" />
+
+        <ImageView
+            style="@style/color_array"
+            android:src="@color/color_drawer_15" />
+    </LinearLayout>
+</LinearLayout>

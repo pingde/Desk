@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>       <!--303F9F-->
+    <color name="colorPrimaryDark">#2e2e2e</color>   <!--303F9F-->
+    <color name="colorAccent">#2ec58e</color>
+    <color name="black_deep">#962e2e2e</color>
+
+    <color name="content_background">#f1f2ed</color>
+    <color name="title_background">#f7f8f3</color>
+    <color name="click_background">#c0c1be</color>
+    <color name="drawer_off">#e0e1dc</color>
+    <color name="drawer_on">#2ec58e</color>
+    <color name="drawer_error">#33de6859</color>
+    <color name="drawer_error2">#e9796b</color>
+    <color name="green_shallow">#2ec58e</color>
+    <color name="green_deep">#21a072</color>
+
+    <color name="text_write">#f1f2ed</color>
+    <color name="text_gray">#8f8f8d</color>
+    <color name="text_green">#2ec59e</color>
+    <color name="text_gray_deep">#585857</color>
+    <color name="text_black">#2e2e2e</color>
+
+    <!--灯带色选择-->
+    <color name="color_drawer_write">#eaebe5</color>
+    <color name="color_drawer_pink">#d56699</color>
+    <color name="color_drawer_blue">#72abea</color>
+
+    <color name="color_drawer_0">#f2ecd2</color>
+    <color name="color_drawer_1">#ecdfa6</color>
+    <color name="color_drawer_2">#f4c690</color>
+    <color name="color_drawer_3">#f3a782</color>
+    <color name="color_drawer_4">#ec75a5</color>
+    <color name="color_drawer_5">#ec7575</color>
+    <color name="color_drawer_6">#f0a3a3</color>
+    <color name="color_drawer_7">#f8afc0</color>
+    <color name="color_drawer_8">#c96ceb</color>
+    <color name="color_drawer_9">#a26ceb</color>
+    <color name="color_drawer_10">#7b6ceb</color>
+    <color name="color_drawer_11">#6c96eb</color>
+    <color name="color_drawer_12">#b6eb8f</color>
+    <color name="color_drawer_13">#6ceba5</color>
+    <color name="color_drawer_14">#6cebd2</color>
+    <color name="color_drawer_15">#6cd2eb</color>
+
+
+</resources>
